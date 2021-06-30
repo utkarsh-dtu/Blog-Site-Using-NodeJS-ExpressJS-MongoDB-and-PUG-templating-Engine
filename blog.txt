@@ -1,0 +1,17 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Homepage
+  
+
+    
+
+.container
+    each blogp in BlogItems
+        p #{blogp.title}
+        //- a(href = 'blogs/#{blogp.id}') Read More
+        //- a(href = 'blogs/' + #{blogp.id}) Read More
+        //- a(href = '/blogs/' + blogp.id) Read More
+
+
